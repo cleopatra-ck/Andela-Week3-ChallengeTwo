@@ -8,11 +8,11 @@ class BankAccount {
 
     }
 
-    getBalance() {
+    getBalance(name) {
         // your code here
-        
-
-    }
+       
+        console.log("Your account balance is Ugx" + this.balance);       
+   }
 
     open (){ 
         // your code here
