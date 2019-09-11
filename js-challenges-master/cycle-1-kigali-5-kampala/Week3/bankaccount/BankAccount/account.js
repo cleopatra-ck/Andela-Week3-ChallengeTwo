@@ -9,7 +9,7 @@ class BankAccount {
     getBalance() {
         // your code here
  if (this.name != null) {
-        return (this.name +"your account balance is Ugx" + this.balance);
+        return (this.name + " " + "your account balance is Ugx" + " " +this.balance);
        }  
        }
 
@@ -22,7 +22,7 @@ class BankAccount {
        this.name = FirstName + " " + LastName;
       this.balance = newamount;
        if (this.name != null && this.balance > 0){
-          return (this.name + " is your account name and Ugx" + this.balance + "is your available balance.");
+          return (this.name + " " + " is your account name and Ugx" + " " + this.balance + "is your available balance.");
         }
             
         }
@@ -33,7 +33,7 @@ class BankAccount {
        if (this.name != null){
               this.balance += newamount;
     }
-    return (this.name + " this is your new balance Ugx" + this.balance);
+    return (this.name + " " + " this is your new balance Ugx" + " " + this.balance);
   }
   
 
@@ -44,7 +44,7 @@ class BankAccount {
     
           this.balance -= newamount;
     }
-    return (this.name + " this is your new balance Ugx" + this.balance);
+    return (this.name + " " + " this is your new balance Ugx" + " " + this.balance);
     
 } 
 
