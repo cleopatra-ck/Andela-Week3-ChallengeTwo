@@ -9,7 +9,7 @@ class BankAccount {
     getBalance() {
         // your code here
  if (this.name != null) {
-        return (this.name + " " + "your account balance is Ugx" + " " +this.balance);
+        return (this.name + " " + "your account balance is Ugx" + " " + this.balance);
        }  
        }
 
@@ -18,7 +18,7 @@ class BankAccount {
     
         var FirstName = prompt("enter your firstName ");
        var LastName = prompt ("enter your LastName ");
-       var newamount = prompt ("enter minimum deposit");
+       var newamount = prompt ("enter minimum amount");
        this.name = FirstName + " " + LastName;
       this.balance = newamount;
        if (this.name != null && this.balance > 0){
@@ -40,9 +40,9 @@ class BankAccount {
 
     withdraw ( ) {
         // your code here
-        if (this.name != null && this.balance > newamount){
+        if (this.name != null && this.balance > amount){
     
-          this.balance -= newamount;
+          this.balance -= amount;
     }
     return (this.name + " " + " this is your new balance Ugx" + " " + this.balance);
     
@@ -51,11 +51,12 @@ class BankAccount {
   
   close(){
 
-
+if (this.name = name && this.balance == 0){ 
+  
+  return undefined }
 
         
-
-    }
+   }
 
       
       }
