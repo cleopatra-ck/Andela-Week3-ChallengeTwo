@@ -13,7 +13,7 @@ test('Will not accept name as number input', () => {
 
 
     test('Will not accept balance as character input', () => {
-        expect(BankAccount(this.balance == (/[aeiou]/gi) )).toBe('invalid input');
+        expect(BankAccount(this.balance == (/[a-zA-Z]/gi) )).toBe('invalid input');
     });
 
 test('Will return a bank account', () => {
