@@ -1,18 +1,39 @@
 // tests here
-        var user1= new BankAccount("Cleo",2000);
-        user1.open();
-        user1.deposit(1000);
+       
+const BankAccount = require('./BankAccount');
+
+test('Will not accept an empty name field as input', () => {
+    expect(BankAccount(this.name == null)).toBe('invalid input');
+});
 
 
-        var user2 = new BankAccount("Cliio",3000);
-        user2.withdraw();
-        user2.getbalance();
+test('Will not accept name as number input', () => {
+        expect(BankAccount(this.name == Number )).toBe('invalid input');
+    });
 
 
-        
-        var user3 = new BankAccount("Patra",8000);
-        user3.close();
+    test('Will not accept balance as character input', () => {
+        expect(BankAccount(this.balance == (/[aeiou]/gi) )).toBe('invalid input');
+    });
 
+test('Will return a bank account', () => {
+    expect(
+         deposit (name, balance)
+        .toEqual(
+            (Cleo, 2000)))});
+            
+        ;
+
+  test('transactions against a closed account will fail', () => {
+  expect(
+     Close( Cleo, 0)
+         ).toEqual(
+                        (undefined)
+                        );
+
+
+            
+});
 
 
         
