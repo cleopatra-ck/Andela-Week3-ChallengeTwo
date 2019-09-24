@@ -1,6 +1,6 @@
 // tests here
        
-const BankAccount = require('./BankAccount');
+const BankAccount = require('./account.js');
 
 test('Will not accept an empty name field as input', () => {
     expect(BankAccount(this.name == null)).toBe('invalid input');
