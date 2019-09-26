@@ -1,15 +1,18 @@
 class BankAccount {
     constructor (name, balance) {
         // your code here
-        this.name = name;
+        this.name = name ;
       this.balance = balance; 
+
+
+
    }
     
 
     getBalance() {
         // your code here
  if (this.name != null) {
-        return  (this.name + " " + "your account balance is Ugx" + " " + this.balance);
+        return  ( "Your account balance is Ugx" + " " + this.balance);
        }  
        }
 
@@ -19,7 +22,7 @@ class BankAccount {
        var minamount;
        this.balance = minamount;
        if (this.name != null && this.balance > 0){
-          return (this.name + " " + " is your account name and Ugx" + " " + this.balance + "is your available balance.");
+          return (this.name + " " + " is your account name and Ugx" + " " + this.balance + " " +"is your available balance.");
         }
             
         }
@@ -60,7 +63,7 @@ if (this.name = name && this.balance == 0){
       
       }
       
-      var cleo= new BankAccount('cleo',1100);
+     var cleo= new BankAccount('cleo',1100);
         cleo.deposit(400);
 
 
@@ -79,11 +82,11 @@ if (this.name = name && this.balance == 0){
 
 
        
-      console.log (cleo);
+     /* console.log (cleo);
       console.log (Patra);
       console.log (Pattie);
       console.log (clio);
-      console.log (newacc);
+      console.log (newacc);*/
 
        module.exports = BankAccount;
       
